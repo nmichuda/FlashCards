@@ -1,0 +1,52 @@
+{
+  "decks": [
+    {
+      "id": 1,
+      "name": "Rendering in React",
+      "description": "React's comcomplex web application that relies on DOM manipulation. "
+    },
+    {
+      "name": "React Router",
+      "description": "React Router is a collection of navigational components that compose declaratively with your application.",
+      "id": 2
+    }
+  ],
+  "cards": [
+    {
+      "id": 3,
+      "front": "How do you pass data 'down' to a React child component?",
+      "back": "As properties or props",
+      "deckId": 1
+    },
+    {
+      "front": "What path will match the follow Route?\n<Route>\n  <NotFound />\n</Route>",
+      "back": "All paths. A route with no path matches all URL's",
+      "deckId": 2,
+      "id": 4
+    },
+    {
+      "front": "What does <Switch> do?",
+      "back": "Renders the first matching child <Route> ",
+      "deckId": 2,
+      "id": 5
+    },
+    {
+      "front": "This is a new card",
+      "back": "This is the back of a new card",
+      "deckId": 1,
+      "id": 8
+    },
+    {
+      "front": "A card",
+      "back": "A back\n",
+      "deckId": 2,
+      "id": 9
+    },
+    {
+      "front": "this is a 3rd card",
+      "back": "3rd card back",
+      "deckId": 1,
+      "id": 10
+    }
+  ]
+}

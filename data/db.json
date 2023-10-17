@@ -14,7 +14,7 @@
   "cards": [
     {
       "id": 3,
-      "front": "How do you pass data 'down' to a React child component?",
+      "front": "How do you pass data 'down' to a Reactcomponent?",
       "back": "As properties or props",
       "deckId": 1
     },

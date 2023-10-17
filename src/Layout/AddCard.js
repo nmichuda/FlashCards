@@ -3,6 +3,7 @@ import { Link, useHistory, useParams, useRouteMatch } from "react-router-dom";
 import { readCard, updateCard, readDeck, createCard } from "../utils/api";
 import AddCardNav from "./AddCardNav";
 import CancelButton from "./CancelButton";
+import FormComponent from "./FormComponent";
 
 
 
@@ -51,26 +52,8 @@ function AddCard(){
         <div>
             <AddCardNav deck={deck}/>
             <h1>{deck.name}: Add Card</h1>
-        <form onSubmit={handleSubmit}>
-            <div className="form-group">
-            <label>
-                Front:
-                <textarea id="cardFront" name="cardFront" value={cardFront} onChange={handleFrontChange}/>
-            </label>
-            </div>
-            <div>
-            <label>
-                Back:
-                <textarea id="cardBack" name="cardBack" value={cardBack} onChange={handleBackChange}/>
-            </label>
-            </div>
-            <button type="submit">Submit</button>
-            <CancelButton/>
-            
-
-
-
-        </form>
+        <FormComponent firstLabel="Front" firstValue={cardFront} firstHandler={handleFrontChange} secondLabel="Back" secondValue={cardBack} secondHandler={handleBackChange} handleSubmit={handleSubmit}/>
+        
 
         </div>
 

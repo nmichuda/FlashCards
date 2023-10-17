@@ -6,6 +6,7 @@ import { readCard, updateCard, readDeck, createDeck } from "../utils/api";
 import EditViewNav from "./EditViewNav";
 import { listDecks } from "../utils/api";
 import CreateDeckNav from "./CreateDeckNav";
+import CancelButton from "./CancelButton";
 
 
 
@@ -69,6 +70,8 @@ function CreateDeck(){
             </label>
             </div>
             <button type="submit">Submit</button>
+            <CancelButton/>
+            
 
 
 

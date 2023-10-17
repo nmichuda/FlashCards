@@ -5,7 +5,7 @@ import EditCard from "./EditCard";
 import { readCard, updateCard, readDeck } from "../utils/api";
 import EditCardNav from "./EditCardNav";
 import CancelButton from "./CancelButton";
-
+import FormComponent from "./FormComponent";
 
 
 
@@ -64,25 +64,8 @@ function CardEditor(){
         <div>
             <EditCardNav deck={deck} card={oldCard}/>
             <h1>Edit Card</h1>
-        <form onSubmit={handleSubmit}>
-            <div className="form-group">
-            <label>
-                Front:
-                <textarea id="cardFront" name="cardFront" value={cardFront} onChange={handleFrontChange}/>
-            </label>
-            </div>
-            <div>
-            <label>
-                Back:
-                <textarea id="cardBack" name="cardBack" value={cardBack} onChange={handleBackChange}/>
-            </label>
-            </div>
-            <button type="submit">Submit</button>
-            <CancelButton/>
-
-
-
-        </form>
+            <FormComponent firstLabel="Front" firstValue={cardFront} firstHandler={handleFrontChange} secondLabel={"Back"} secondValue={cardBack} secondHandler={handleBackChange} handleSubmit={handleSubmit}/>
+        
 
         </div>
 

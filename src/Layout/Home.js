@@ -30,10 +30,10 @@ function Home() {
 
       {decks.map((deck, index) => {
         return (
-          <div style={cardStyle} class="flex">
+          <div style={cardStyle} className="flex" key={index}>
             <div className="card-body">
               <div className="row">
-                <div clasName="col-5">{deck.name}</div>
+                <div className="col-5">{deck.name}</div>
 
                 <div className="col-5">{deck.cards.length} cards</div>
               </div>

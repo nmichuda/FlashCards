@@ -39,7 +39,7 @@ function AddCard(){
     const handleSubmit = (event) =>{
         event.preventDefault();
         createCard(deckId, {front: cardFront, back: cardBack})
-        .then((newCard)=>history.push(`/decks/${newCard.deckId}`));
+        .then((newCard)=>history.go(0));
 
     }
 
@@ -53,7 +53,8 @@ function AddCard(){
             <AddCardNav deck={deck}/>
             <h1>{deck.name}: Add Card</h1>
         <FormComponent firstLabel="Front" firstValue={cardFront} firstHandler={handleFrontChange} secondLabel="Back" secondValue={cardBack} secondHandler={handleBackChange} handleSubmit={handleSubmit}/>
-        
+        <br/>
+        <button onClick={()=>history.push(`/decks/${deckId}`)}>Done</button>
 
         </div>
 

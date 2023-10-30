@@ -47,6 +47,18 @@
       "back": "3rd card back",
       "deckId": 1,
       "id": 10
+    },
+    {
+      "front": "New Card",
+      "back": "new card back",
+      "deckId": 1,
+      "id": 11
+    },
+    {
+      "front": "new card 2",
+      "back": "back",
+      "deckId": 1,
+      "id": 12
     }
   ]
 }
